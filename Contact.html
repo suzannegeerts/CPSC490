@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Felicia's Custom Cakes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="javascript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="pink-background pink-border"> 
+
+    <header class="title">Felicia's Custom Cakes &#x2655 Contact</header>
+    <div id="mySidenav" class="sidenav">
+        <a href="Website.html">Home</a>
+        <a href="AboutMe.html">About Me</a>
+        <button class ="dropdown-btn" onclick="dropDown()"> Photos
+        <script type="text/javascript" src="javascript.js"></script>
+        <i class="fa fa-caret-square-o-down"></i></button>
+        <div class="dropdown-container">
+            <a href="BirthdayCakes.html">Birthday Cakes</a>
+            <a href="OccassionCakes.html">Occassion Cakes</a>
+            <a href="Treats.html">Treats</a>
+        </div>
+        <a href="Contact.html">Contact</a>
+        <img src="contact.gif" alt="Contact Gif" style="width:130px;height:130;">
+    </div>
+
+    <form id="contactform" class="container">
+        <label for="firstname">First Name</label>
+        <input type="text" id="fname" onfocus="changeColor(this)" name="firstname" placeholder="Your first name...">
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lname" onfocus="changeColor(this)" name="lastname" placeholder="Your last name...">
+
+        <label for="email">E-mail &#x2709</label>
+        <input type="text" id="email" onfocus="changeColor(this)" name="email" placeholder="Your e-mail...">
+
+        <label for="interest">I am interested in... </label>
+        <select id="options" name="Options" onchange="popUpMessage()">
+            <option value="Select">Please select one of the following...</option>
+            <option value="Wedding Cake">Wedding Cake</option>
+            <option value="Birthday Cake">Birthday Cake</option>
+            <option value="Occassion Cake">Occassion Cake</option>
+            <option value="Cupcakes">Cupcakes</option>
+            <option value="Treats">Treats</option>
+            <option value="Other">Other</option>
+        </select>
+        <label for="message">Let's discuss how we will customize your: &#x261E <input type="send" onclick="getInterest()" value="Press me!"> <p id="interest"></p></label>
+        <textarea id="message" onfocus="changeColor(this)" name="Message" placeholder="&#x270E Tell me about your dream..." style="height:150px"></textarea>
+
+        <input type="send" onclick="sendMessage()" value="Send my inquiry!">
+    
+    </form>
+
+    <footer class="small-black-text">Website by: Suzanne Geerts</footer>
+
+</body>
+</html>
